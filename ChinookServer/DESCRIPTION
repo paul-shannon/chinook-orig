@@ -1,0 +1,14 @@
+Package: ChinookServer
+Type: Package
+Title: ChinookServer:  Support WebSocket and HTTP transmission of simple JSON messages
+Version: 1.0.7
+Date: 2016-05-31
+Author: Paul Shannon
+Maintainer:  <pshannon@systemsbiology.org>
+Depends: R (>= 3.2.2), jsonlite, httpuv, ChinookDataset, Groups
+Suggests: RUnit
+Description:
+License: GPL
+LazyLoad: yes
+Collate: ChinookServer.R
+

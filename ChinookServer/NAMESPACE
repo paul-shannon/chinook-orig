@@ -1,0 +1,37 @@
+exportClasses(ChinookServer)
+
+export(
+  ChinookServer,
+  printf,
+  ChinookServer.getDatasetNames,
+  toJSON
+  )
+
+exportMethods(
+  run,
+  serverVersion,
+  close,
+  port,
+  getDatasetNames,
+  getDatasetByName,
+  getAnalysisPackageNames,
+  addMessageHandler,
+  getMessageNames    
+  #getUserID,
+  #getUserGroups,
+  #getURI,
+  #getUserDirectory,
+  #addData
+  #getDataItem,
+  #deleteDataItem,
+  #getSummary
+  )
+
+importClassesFrom(methods, character, integer)
+importFrom(methods, new)
+
+import(Dataset)
+import(ChinookDataset)
+import(BiocGenerics)
+import(httpuv)
+import(jsonlite)

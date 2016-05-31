@@ -1,0 +1,28 @@
+exportClasses(ChinookDataset)
+
+exportMethods (
+  getName,
+  setServer,
+  getServer,
+  getDataset,
+  registerMessageHandlers
+  )
+
+export(
+   ChinookDataset,
+   Dataset.getItemNames,
+   Dataset.getItemsByName,
+   Dataset.getItemSubsetByName,
+   Dataset.getManifest,
+   Dataset.getSampleColors,
+   Dataset.getMatrixNamesByCategory,
+   #Dataset.getDataFrame,
+   #Dataset.getJSON,
+   Dataset.getSubjectHistoryTable
+   #Dataset.getNetwork    
+   )
+
+import(Dataset)
+importClassesFrom(methods, character, integer)
+importFrom(methods, new)
+

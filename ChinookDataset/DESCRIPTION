@@ -1,0 +1,12 @@
+Package: ChinookDataset
+Type: Package
+Title: ChinookDataset: a general purpose wrapper Chinook/Oncoscape/STTR data packages
+Version: 1.0.8
+Date: 2016-05-31
+Author: Paul Shannon
+Maintainer: Paul Shannon <pshannon@systemsbiology.org>
+Depends: R (>= 3.2.2)
+Imports: methods, BiocGenerics
+Suggests: RUnit
+Description:  Provides JSON interface for "Dataset" datasets
+License: GPL-2
