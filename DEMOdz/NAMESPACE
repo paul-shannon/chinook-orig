@@ -1,0 +1,10 @@
+exportClasses(DEMOdz)
+
+export(
+   DEMOdz
+   )
+exportMethods(show)
+
+importClassesFrom(methods, character, integer)
+importFrom(methods, new)
+

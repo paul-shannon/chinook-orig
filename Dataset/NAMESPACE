@@ -1,0 +1,20 @@
+exportClasses(Dataset)
+
+exportMethods(
+  show,
+  getName,
+  getManifest,
+  getSubjectHistory,
+  getItemNames,
+  getItem,
+  sampleIdToSubjectId
+  )
+
+export(
+   Dataset
+   )
+
+import(SubjectHistory)
+importClassesFrom(methods, character, integer)
+importFrom(methods, new)
+

@@ -1,0 +1,13 @@
+Package: SubjectHistory
+Type: Package
+Title: SubjectHistory: a base class for Chinook subject (patient, participant, or other entity) historical data
+Version: 1.0.2
+Date: 2015-05-31
+Author: Paul Shannon
+Maintainer: Paul Shannon <pshannon@systemsbiology.org>
+Depends: R (>= 3.2.0)
+Imports: methods, BiocGenerics
+Suggests: RUnit
+Description: A base class, extended for each specific case study, optionally supports CAISIS, event list, and tabular representations
+License: GPL-2
+LazyLoad: yes
