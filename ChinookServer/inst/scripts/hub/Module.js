@@ -79,7 +79,9 @@ function setupSocket(socket)
         } // socket.onmessage, got_packet
 
      socket.onclose = function(){
-        alert("Web socket connection to server has closed");
+        var msg = "Web socket connection to server has closed";
+        console.log(msg);
+        //alert(msg);
         } // socket.onclose
      } // try
   catch(exception) {

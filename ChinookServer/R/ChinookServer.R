@@ -83,13 +83,13 @@ toJSON <- function(..., auto_unbox = TRUE)
         message(sprintf("failed to load dataset '%s'", datasetName))
         })
      if(exists(datasetName)){
-        instantiation.string <- sprintf("dz <- %s()", datasetName, datasetName)
+        instantiation.string <- sprintf("dataset <- %s()", datasetName, datasetName)
         duration <- system.time(tryCatch(eval(parse(text=instantiation.string)),
                                 error=function(e)
                                 message(sprintf("failure calling constructor for '%s'", datasetName))))[["elapsed"]]
 
-        stopifnot('Dataset' %in% is(dz))
-        chinookDataset <- ChinookDataset(datasetName, dz)
+        stopifnot('Dataset' %in% is(dataset))
+        chinookDataset <-ChinookDataset(datasetName, dataset)
         setServer(chinookDataset, server)
         registerMessageHandlers(chinookDataset)
         assignment.string <- sprintf("server@state[['%s']] <- chinookDataset", datasetName)
@@ -176,8 +176,8 @@ setMethod("addMessageHandler", "ChinookServer",
       wsCon$ws <- ws
       ws$onMessage(function(binary, rawMessage) {
          message <- as.list(fromJSON(rawMessage))
-         print("--- ws$onMessage");
-         print(message)
+         #print("--- ws$onMessage");
+         #print(message)
          wsCon$lastMessage <- message
          if(!is(message, "list")){
             message("message: new websocket message is not a list");
