@@ -10,7 +10,9 @@
    <script src="http://code.jquery.com/qunit/qunit-1.18.0.js"></script>
    <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.18.0.css">
 
-   <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+   <!-- script   src="https://code.jquery.com/jquery-1.12.3.min.js"></script -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
 
    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
    <link   rel="stylesheet" type="text/css"
@@ -18,10 +20,14 @@
 
    <script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
 
-   <!-- script
-   src="http://oncoscape-static.s3-website-us-west-2.amazonaws.com/js/d3.min.js"></script -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js"></script>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-qtip/2.2.5/cytoscape-qtip.js"></script>
+
+
+
    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-   
+
    <script src="http://oncoscape-static.s3-website-us-west-2.amazonaws.com/js/jquery.dataTables-1.10.5.min.js"></script>
    <link   rel="stylesheet" type="text/css"
            href="http://oncoscape-static.s3-website-us-west-2.amazonaws.com/css/jquery.dataTables-1.10.5.min.css">
