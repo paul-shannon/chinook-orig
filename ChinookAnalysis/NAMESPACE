@@ -1,0 +1,17 @@
+
+exportClasses(ChinookAnalysis)
+
+exportMethods (
+  setServer,
+  getServer,
+  getName,
+  registerMessageHandlers
+  )
+
+export(
+   ChinookAnalysis
+   )
+
+importClassesFrom(methods, character, integer)
+importFrom(methods, new)
+

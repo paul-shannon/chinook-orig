@@ -1,0 +1,17 @@
+exportClasses(Groups)
+
+exportMethods(
+  getName,
+  getGroupNames,
+  getGroup,
+  createColorList,
+  createColorLegend
+  )
+
+export(
+   Groups
+   )
+
+importClassesFrom(methods, character, integer)
+importFrom(methods, new)
+
